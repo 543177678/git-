@@ -1,0 +1,48 @@
+1，创建标识
+git config --global  user.name "XXXXX"   创建name标识为 XXXXX
+git config --global  user.email "XXXXX"   创建email标识为 XXXXX
+
+2，创建版本库
+git init 通过命令把这个目录变成git可以管理的仓库
+
+3，添加缓存
+git add XXXXX 将XXXXX文件添加缓存
+
+4，提交仓库
+git commit -m "XXXXX" XXXXX为注释内容
+
+5，查看是否有已修改未提交文件
+git status
+
+6，查看修改内容
+git diff XXXXX XXXXX为查看的文件名
+
+------------------------------------------------------------------------------------------------------------
+
+1，查看历史版本（最近三次）
+git log
+
+2，退回版本
+git reset --hard HEAD~XXX  XXX为数字，上XXX了版本
+
+3，版本号查询
+git reflog
+
+4，通过版本号退回
+git reset --hard XXXXX XXXXX为版本号查询的版本号
+
+-------------------------------------------------------------------------------------------------------------
+1，清除缓存区
+git checkout -- XXXXX XXXXX为文件名
+
+-------------------------------------------------------------------------------------------------------------
+
+1，远程仓库创建秘钥
+ssh-keygen -t rsa -C "543177678@qq.com"
+
+2，导入代码
+git remote add origin https://github.com/543177678/XXXXX.git  XXXXX为gitHub库名
+git push -u origin master
+
+3，推送命令
+git push origin master
